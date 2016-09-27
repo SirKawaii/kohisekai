@@ -16,8 +16,8 @@
           <a href="javascript:void(0)" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown
             <b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a href="javascript:void(0)">Action</a></li>
-            <li><a href="javascript:void(0)">Another action</a></li>
+            <li><a href="javascript:void(0)">Acción</a></li>
+            <li><a href="javascript:void(0)">Otra Acción</a></li>
             <li><a href="javascript:void(0)">Something else here</a></li>
             <li class="divider"></li>
             <li class="dropdown-header">Dropdown header</li>
