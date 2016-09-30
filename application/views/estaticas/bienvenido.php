@@ -1,44 +1,86 @@
+<div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center orange-text">Starter Template</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+      </div>
+      <div class="row center">
+        <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Get Started</a>
+      </div>
+      <br><br>
 
-
-<div class="jumbotron">
-  <h1>Jumbotron</h1>
-
-  <p>Hola mundo !.</p>
-
-  <p><a class="btn btn-primary btn-lg">Learn more</a></p>
-</div>
-    <button type="button" class="btn btn-danger">No me pulses!</button>
-
-    <a href="javascript:void(0)" class="btn btn-default btn-lg btn-block btn-raised">Block level button</a>
-		<fieldset disabled="">
-		  <a href="javascript:void(0)" class="btn btn-default btn-lg btn-block btn-raised">Block level button disabled</a>
-		</fieldset>
-
-
-    <h1 class="header">Dropdown</h1>
-
-<div class="sample">
-  <div class="form-group">
-    <label for="s1">Your favorite pastry</label>
-    <select id="s1" class="form-control">
-      <option value="Apple fritter">Apple fritter</option>
-      <option value="Croissant">Croissant</option>
-      <option value="Donut">Donut</option>
-      <option value="Financier">Financier</option>
-      <option value="Jello">Jello</option>
-      <option value="Madeleine">Madeleine</option>
-      <option value="Pound cake">Pound cake</option>
-      <option value="Pretzel">Pretzel</option>
-      <option value="Sfogliatelle">Sfogliatelle</option>
-    </select>
+    </div>
   </div>
-  <br>
 
-  <div class="form-group">
-    <label for="s2">Your favorite pastry</label>
-    <select id="s2" class="form-control" disabled="">
-      <option value="disabled">Disabled</option>
-    </select>
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
+            <h5 class="center">Speeds up development</h5>
+
+            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
+            <h5 class="center">User Experience Focused</h5>
+
+            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
+            <h5 class="center">Easy to work with</h5>
+
+            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <br><br>
+
+    <div class="section">
+
+    </div>
   </div>
-</div>
-<br>
+
+  <footer class="page-footer orange">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
