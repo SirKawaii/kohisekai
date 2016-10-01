@@ -2,7 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Sitios extends CI_Controller{
-		public function view ($page = 'Pagina de Inicio'){
+		public function view ($page = 'Kohisekai'){
 
 			$data['title'] = ucfirst($page); // Capitalize the first letter
 

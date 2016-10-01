@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>Starter Template - Materialize</title>
+  <title><?php echo $title; ?></title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -12,21 +12,24 @@
 </head>
 <body>
 
-<!-- Dropdown Structure -->
-<ul id="dropdown1" class="dropdown-content">
-  <li><a href="#!">one</a></li>
-  <li><a href="#!">two</a></li>
-  <li class="divider"></li>
-  <li><a href="#!">three</a></li>
-</ul>
-<nav>
-  <div class="nav-wrapper">
-    <a href="#!" class="brand-logo">Logo</a>
-    <ul class="right hide-on-med-and-down">
-      <li><a href="sass.html">Sass</a></li>
-      <li><a href="badges.html">Components</a></li>
-      <!-- Dropdown Trigger -->
-      <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
-    </ul>
-  </div>
-</nav>
+ <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><?php echo $title; ?></a>
+      <ul class="right hide-on-med-and-down">
+        <!-- <li><a href="#">Algun Link</a></li> -->
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <!-- Inicio Tarjeta Nav -->
+        <li><div class="userView">
+          <img class="background responsive-img" src="http://www.combogamer.com/wp-content/uploads/2015/01/Ghost-in-the-Shell-Motoko-ComboGamer.jpg">
+          <a href="#!user"><img class="circle responsive-img" src="https://static.betazeta.com/www.fayerwayer.com/up/2016/04/Motoko-Kusanagi1-960x623.jpg"></a>
+          <a href="#!name"><span class="white-text name">John Doe</span></a>
+          <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+        </div></li>
+
+        <!-- fin tarjeta Nav-->
+        <li><a href="#" class="waves-effect btn-large">No va a ningun lado.</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
