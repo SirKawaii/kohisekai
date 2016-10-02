@@ -11,7 +11,7 @@
           <h5 class="white-text">Relevantes</h5>
           <ul>
             <li><a class="white-text" href="http://kohisekai.com">Kohisekai</a></li>
-            <li><a class="white-text" href="http://mapa.kohisekai.com ">Masticapp</a></li>
+            <li><a class="white-text" href="http://mastica.kohisekai.com ">Masticapp</a></li>
             <li><a class="white-text" href="http://extrol.comyr.com">Antigua Pagina de experimentos</a></li>
           </ul>
         </div>

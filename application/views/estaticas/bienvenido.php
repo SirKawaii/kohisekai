@@ -6,7 +6,7 @@
         <h5 class="header col s12 light">En este momento no podemos atenderlo... aun.</h5>
       </div>
       <div class="row center">
-        <a href="http://mapa.kohisekai.com" id="download-button" class="btn-large waves-effect waves-light orange">masticApp</a>
+        <a href="http://mastica.kohisekai.com" id="download-button" class="btn-large waves-effect waves-light orange">masticApp</a>
       </div>
       <br><br>
 
@@ -24,7 +24,7 @@
             <img class="responsive-img" src="<?php echo base_url('assets/imagenes/home.jpg');?>"/>
             <h5 class="center">Intentamos Desarrollar.</h5>
 
-            <p class="light">Por fin he hecho algo mas decente, pero eso no signnifica que no siga asi :3</p>
+            <p class="light">Por fin he hecho algo mas decente, pero eso no significa que no siga asi :3</p>
           </div>
         </div>
 
