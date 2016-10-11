@@ -8,8 +8,8 @@ class Watchdog extends CI_Controller{
     function __construct(){
         parent::__construct();
         //inicializacion de Atributos Globales
-        $this->nombreSitio = 'Masticapp';
-        $this->pagina = 'Mapa';
+        $this->nombreSitio = 'Kohisekai';
+        $this->pagina = 'Perrito miron';
 
         $this->variables['nombreSitio'] = $this->nombreSitio;
         $this->variables['titulo'] = ucfirst($this->pagina); // Capitalize the first letter

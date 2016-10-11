@@ -13,7 +13,7 @@
 <body>
 
  <nav class="light-blue lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="<?= base_url();?>" class="brand-logo"><?php echo $titulo; ?></a>
+    <div class="nav-wrapper container"><a id="logo-container" href="<?= base_url();?>" class="brand-logo"><?php echo $nombreSitio; ?></a>
       <ul class="right hide-on-med-and-down">
         <li><a href="<?= base_url('index.php/watchdog');?>">Watchdog</a></li>
       </ul>
