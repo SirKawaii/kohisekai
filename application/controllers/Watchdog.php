@@ -46,6 +46,7 @@ class Watchdog extends CI_Controller{
 
         $this->load->view('tema/footer', $this->variables);
 
+
     }
 }
 
