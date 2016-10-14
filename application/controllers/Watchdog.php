@@ -1,4 +1,8 @@
 <?php
+/*
+    Perrito miron: Created By Mit
+    Watchdog, el ch llama a las tablas.
+*/
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Watchdog extends CI_Controller{
@@ -7,6 +11,7 @@ class Watchdog extends CI_Controller{
 
     function __construct(){
         parent::__construct();
+        $this->load->helper('watchdog/ping_helper');
         //inicializacion de Atributos Globales
         $this->nombreSitio = 'Kohisekai';
         $this->pagina = 'Perrito miron';
@@ -21,33 +26,43 @@ class Watchdog extends CI_Controller{
 
     function index (){
 
-
-
         $this->load->view('tema/header', $this->variables);
 
-        //Inicia Ping
-        $host = 'hostalalmendral.dyndns.org';
-        $port = 80;
-        $waitTimeoutInSeconds = 1;
-        if($fp = fsockopen($host,$port,$errCode,$errStr,$waitTimeoutInSeconds)){
-           $resultado = "Ping Exitoso";
-        } else {
-           $resultado = "La conexion a fallado.";
-        }
-        fclose($fp);
-        //Fin Ping
-        $this->variables['host']= $host;
-        $this->variables['port'] = $port;
-        $this->variables['tiempo'] = $waitTimeoutInSeconds;
+        //Lista de Servidores
+        $lista_servidores = [
+            ['host' => "hostalalmendral.dyndns.org",
+             'puerto' => "80"],
+            //Siguiente
+            ['host' => "nicolcasa.myq-see.com",
+             'puerto' => "80"]
+        ];
 
-        $this->variables['resultado'] = $resultado;
-        $this->load->view('watchdog/watchdog.php', $this->variables);
+        //tiempo de espera
+        $timeout = 2;
+        //creacion de tabla :
+        $this->load->view('watchdog/wat');
+        foreach($lista_servidores as $servidor){
+            //llamada al ping
+            @$up = do_ping($servidor['host'],$servidor['puerto'],$timeout);
+            if($up){$resultado = "<td class='green-text'>Online</td>";}
+            else{$resultado = "<td class='red-text'>Offline</td>";}
+
+            $this->variables['host'] = $servidor['host'];
+            $this->variables['puerto'] = $servidor['puerto'];
+            $this->variables['estado'] = $resultado;
+            $this->load->view('watchdog/ch', $this->variables);
+        }
+        $this->load->view('watchdog/dog');
+
+
 
 
         $this->load->view('tema/footer', $this->variables);
 
 
     }
+
+
 }
 
 
